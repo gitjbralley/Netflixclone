@@ -11,8 +11,14 @@
 .card-list {
 display: flex;
 gap: 10px;
-overflow-x: auto;
+overflow-x: scroll;
+width: 100vw;
+max-width: 1500px;
+overflow-x: hidden;
+}
 
+.card-list::-webkit-scrollbar {
+    display: none;
 }
 
 .card-list img {
